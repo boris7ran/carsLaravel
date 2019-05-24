@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>List of Cars</title>
+    <title>Document</title>
 </head>
 <body>
-    <ul>
-        @foreach ($cars as $car)
-            <li><a href="{{ '/cars/' . $car->id}}">{{ $car->title }}</a></li>
-        @endforeach
-    </ul>
+    <h1>
+        Car name: {{ $car->title }}
+    <h1>
+    <h2>
+        Car producer: {{ $car->producer}}
+    </h2>
+    <h3>
+        Number of doors: {{ $car->number_of_doors}}
+    </h3>
 </body>
 </html>
