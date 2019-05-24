@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+@extends('layouts.master')
+
+@section('title', 'Car')
+
+@section('content')
     <h1>
         Car name: {{ $car->title }}
     <h1>
@@ -16,5 +12,4 @@
     <h3>
         Number of doors: {{ $car->number_of_doors}}
     </h3>
-</body>
-</html>
+@endsection

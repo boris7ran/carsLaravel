@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('welcome', compact('name', 'age'));
 });
 
-Route::get('/About', function(){
+Route::get('/about', function(){
     return view('about');
 });
 
